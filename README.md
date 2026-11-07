@@ -1,106 +1,200 @@
-# 🍔 Restaurant Order System in C
+<div align="center">
 
-> Order your favorite food, apply a promo code, and get a clean, ready-to-print bill, all from your terminal.
+<img src="assets/banner.svg" alt="Maruf Billah — SyntaxMaruf" width="100%"/>
 
----
+<br/>
 
-## 👋 Hello, I'm Maruf Billah
+![Visitors](https://komarev.com/ghpvc/?username=SyntaxMaruf&style=for-the-badge&color=3DDC84&labelColor=0b0f0c&label=VISITORS)
+![Followers](https://img.shields.io/github/followers/SyntaxMaruf?style=for-the-badge&logo=github&logoColor=white&color=FFB000&labelColor=0b0f0c)
+![Repos](https://img.shields.io/badge/REPOS-3-3DDC84?style=for-the-badge&logo=git&logoColor=white&labelColor=0b0f0c)
+![Language](https://img.shields.io/badge/MAIN_LANG-C-FFB000?style=for-the-badge&logo=c&logoColor=white&labelColor=0b0f0c)
 
-I'm a CSE student at **Daffodil International University**. I built this project in my **1st year, 3rd semester** while learning C programming.
+### **Code • Learn • Build • Debug • Repeat**
+**`SyntaxMaruf` • CSE • Daffodil International University**
 
-I created a **restaurant order and billing system** that works just like a real cashier counter: pick your food, choose how many you want, and get a neat cash memo with discount and VAT already calculated. I wanted to make something simple, useful, and fun to use, and I hope you enjoy it as much as I enjoyed building it.
+<img src="assets/divider.svg" width="100%" alt=""/>
 
----
+</div>
 
-## ✨ Key Features
+## 🖥️ `#include<Who Am I?.h>.c`
 
-| | Feature | What it does |
-| :-: | :--- | :--- |
-| 🍽️ | **Easy Menu** | See all food items and prices clearly at the start. |
-| 🛒 | **Order Many Items** | Add as many items as you like, each with its own quantity. |
-| ➕ | **Smart Quantity** | Order the same item again and it adds to your total. |
-| 🎟️ | **Promo Code** | Use code `maruf50` on orders of 100 BDT or more and get 50 BDT off. |
-| 🧾 | **Auto VAT** | 5% VAT is calculated for you. No manual math needed. |
-| ✅ | **Confirm Before Billing** | Check your order first, then confirm to get the bill. |
-| 🚫 | **Input Safety** | Wrong item number? The program tells you and lets you try again. |
-| 📄 | **Clean Cash Memo** | A tidy receipt with item, quantity, price, discount, VAT, and grand total. |
+```c
+#include <stdio.h>
 
----
+typedef struct {
+    const char *name;
+    const char *handle;
+    const char *field;
+    const char *main_language;
+    const char *focus[3];
+} Engineer;
 
-## 📋 Menu & Pricing
+int main(void) {
+    Engineer maruf = {
+        .name          = "Maruf Billah",
+        .handle        = "SyntaxMaruf",
+        .field         = "Computer Science & Engineering",
+        .main_language = "C",
+        .focus         = { "Problem Solving", "Data Structures", "Clean Code" }
+    };
 
-| No. | Food Item | Price (BDT) |
-| :-: | :--- | :-: |
-| 1 | 🍔 Burger | 149.99 |
-| 2 | 🍕 Pizza | 349.99 |
-| 3 | 🍝 Pasta | 199.99 |
-| 4 | 🥤 Cold Drinks | 39.99 |
-| 5 | 🚪 No more today (finish ordering) | – |
-
----
-
-## 🧮 How the Bill Is Calculated
-
-```
-Sub Total        = sum of (price × quantity) for every item
-Discount         = 50 BDT (only with promo code "maruf50")
-Discounted Total = Sub Total − Discount
-VAT              = 5% of Discounted Total
-Grand Total      = Discounted Total + VAT
+    printf("Hello, World! I'm %s.\n", maruf.name);
+    printf("Bugs are just features I haven't understood yet.\n");
+    return 0;
+}
 ```
 
----
+<div align="center"><img src="assets/divider.svg" width="100%" alt=""/></div>
 
-## 🚀 Try It Yourself
+## 👨‍💻 About Me
 
-**1. Clone the repository**
-```bash
-git clone https://github.com/SyntaxMaruf/Restaurant-Order-System.git
+Hi, I'm **Maruf Billah**, also known as **SyntaxMaruf**. I'm a Computer Science and Engineering student at **Daffodil International University**, and I'm training myself to think in code. <br>I love writing **C**, cracking problems on competitive programming platforms, and turning small ideas into programs that actually work. My dream is to become a **Cybersecurity Engineer** and an **AI Engineer**, so every day I sharpen the basics: logic, problem solving and clean code. Next on my list is **Python**.
+
+🏫 **University:** Daffodil International University <br>
+💻 **Department:** Computer Science & Engineering <br>
+🧠 **Main Language:** C <br>
+🎯 **Dream Goals:** Cybersecurity Engineer & AI Engineer <br>
+🌱 **Currently Learning:** Data Structures, Problem Solving, Algorithms, etc. <br>
+🐍 **Next Exploring:** Python, C++, Algorithms, Linux, Git workflow, etc.<br>
+⚡ **Mindset:** Debug. Learn. Repeat.<br>
+🚀 **Mission:**	Build real projects, not just tutorials.<br>
+
+<img src="assets/divider.svg" width="100%" alt=""/>
+
+## 🧰 Tech Arsenal
+
+ ### 💻 Programming Languages
+<br>
+<img src="https://skillicons.dev/icons?i=c,c++,python,html,css,js&perline=5" alt="Languages" />
+
+### 🛠️ Tools 
+<br>
+<img src="https://skillicons.dev/icons?i=git,github,vscode&perline=3" alt="Tools" />
+<img src="https://img.shields.io/badge/Code::Blocks-41AD48?style=for-the-badge&logo=codeblocks&logoColor=white" alt="Code::Blocks" />
+
+**🔭 On My Radar**
+
+![Python](https://img.shields.io/badge/Python-Exploring-FFB000?style=for-the-badge&logo=python&logoColor=white&labelColor=0b0f0c)
+![DSA](https://img.shields.io/badge/Data_Structures-Learning-3DDC84?style=for-the-badge&labelColor=0b0f0c)
+![Algorithms](https://img.shields.io/badge/Algorithms-Learning-FFB000?style=for-the-badge&labelColor=0b0f0c)
+![Linux](https://img.shields.io/badge/Linux-Exploring-3DDC84?style=for-the-badge&logo=linux&logoColor=white&labelColor=0b0f0c)
+
+<div align="center"><img src="assets/divider.svg" width="100%" alt=""/></div>
+
+## 🗂️ My Coding Journey
+
+| 📁 Repository | 📝 What's inside | 🛠️ Stack |
+|:--|:--|:--:|
+| [**Restaurant-Order-System**](https://github.com/SyntaxMaruf/Restaurant-Order-System) | My first complete C project, from menu to final cash memo | `C` |
+| [**Lab-Evaluation-1**](https://github.com/SyntaxMaruf/Lab-Evaluation-1) | Lab evaluation solutions and practice files | `C` |
+| [**Google-Drive-Link**](https://github.com/SyntaxMaruf/Google-Drive-Link) | Notes, PDFs and extra resources in one place | `Resources` |
+
+<div align="center"><img src="assets/divider.svg" width="100%" alt=""/></div>
+
+## 🏆 Achievements & Certificates
+
+| 🎖️ Event | 📍 Result | 📜 Certificate |
+|---|---|---|
+| **AI Dev Fest 2026** | Attended the **Prompt Battle** | ✅ Received |
+| **TAKE OFF Programming Contest** | Preliminary: **40th** · Final Round: **32nd** | ✅ Received |
+
+<div align="center"><img src="assets/divider.svg" width="100%" alt=""/></div>
+
+## 📈 Skill Loading Bars
+
+<pre style="font-size: 16px;">
+C Programming      ▰▰▰▰▰▰▰▰▱▱  80%   ← main weapon
+Problem Solving    ▰▰▰▰▰▰▰▱▱▱  70%   ← loading...
+Data Structures    ▰▰▰▰▰▰▰▰▰▱  90%   ← main weapon
+Algorithms         ▰▰▱▱▱▱▱▱▱▱  20%   ← loading...
+Git & GitHub       ▰▰▰▰▰▰▱▱▱▱  60%   ← loading...
+Linux              ▰▱▱▱▱▱▱▱▱▱  10%   ← loading...
+Python             ▰▱▱▱▱▱▱▱▱▱  10%   ← loading...
+</pre>
+
+<div align="center"><img src="assets/divider.svg" width="100%" alt=""/></div>
+
+## 🧩 Problem Solving Arena
+
+<img src="https://img.shields.io/badge/TOPH-200%2B%20Solved-39ff14?style=for-the-badge&labelColor=0d1117" alt="TOPH" />
+<img src="https://img.shields.io/badge/Codeforces-Active-1F8ACB?style=for-the-badge&logo=codeforces&logoColor=white&labelColor=0d1117" alt="Codeforces" />
+<img src="https://img.shields.io/badge/LeetCode-Active-FFA116?style=for-the-badge&logo=leetcode&logoColor=white&labelColor=0d1117" alt="LeetCode" />
+<img src="https://img.shields.io/badge/Vjudge-Active-00e5ff?style=for-the-badge&labelColor=0d1117" alt="Vjudge" />
+<img src="https://img.shields.io/badge/beecrowd-Active-ffb000?style=for-the-badge&labelColor=0d1117" alt="beecrowd" />
+
+<img src="assets/divider.svg" width="100%" alt="" />
+
+## 🗺️ Roadmap
+
+- [x] 🧱 Write first C programs & solve problems
+- [x] 📦 Organize lab codes on GitHub
+- [ ] 🧩 Master Data Structures (Array, Linked List, Stack, Queue, Tree, Graphs)
+- [ ] ⚙️ Practice Algorithms (Sorting, Searching, Recursion)
+- [ ] 🛠️ Build a real C/C++ project (not a tutorial)
+- [ ] 🐧 Get comfortable with Linux & terminal
+- [ ] 🌍 Contribute to an open-source project
+
+<div align="center"><img src="assets/divider.svg" width="100%" alt=""/></div>
+
+## 📊 GitHub Analytics
+
+<div align="center">
+
+<img src="https://streak-stats.demolab.com?user=SyntaxMaruf&hide_border=true&background=0b0f0c&ring=3DDC84&fire=FFB000&currStreakLabel=FFB000&sideLabels=E6EDF3&currStreakNum=E6EDF3&sideNums=E6EDF3&dates=8b949e" alt="Streak"/>
+
+</div>
+
+<div align="center"><img src="assets/divider.svg" width="100%" alt=""/></div>
+
+## 🐍 Contribution Snake
+
+<div align="center">
+
+<img src="assets/snake.svg" alt="Animated snake eating bugs" width="100%"/>
+
+</div>
+
+<div align="center"><img src="assets/divider.svg" width="100%" alt=""/></div>
+
+## 🏆 Trophies
+
+<div align="center">
+
+<img src="assets/trophie.jpg" alt="Trophies" />
+
+</div>
+
+<div align="center"><img src="assets/divider.svg" width="100%" alt=""/></div>
+
+## 💡 Developer Philosophy
+
+```c
+while (!master) {
+    read_the_error_message();   // errors are friends, not enemies
+    debug_with_patience();
+    write_cleaner_code();
+    commit_daily();
+}
 ```
 
-**2. Go to the project folder**
-```bash
-cd Restaurant-Order-System
-```
+> ***"Today's small code is tomorrow's big software."***
 
-**3. Compile the code**
-```bash
-gcc main.c -o main
-```
+<div align="center"><img src="assets/divider.svg" width="100%" alt=""/></div>
 
-**4. Run it**
+## 🌐 Let's Connect
 
-- Windows:
-  ```bash
-  main.exe
-  ```
-- Linux / Mac:
-  ```bash
-  ./main
-  ```
+<div align="center">
 
----
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/matuf-billah-2653a142b)
+[![GitHub](https://img.shields.io/badge/GitHub-SyntaxMaruf-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/SyntaxMaruf)
+[![Email](https://img.shields.io/badge/Email-Contact_Me-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:YOUR_EMAIL@gmail.com)
+[![Facebook](https://img.shields.io/badge/Facebook-Follow-1877F2?style=for-the-badge&logo=facebook&logoColor=white)](https://facebook.com/YOUR_USERNAME)
 
-## 🛠️ Built With
 
-- **Language:** C
-- **Compiler:** GCC
-- **Libraries:** `stdio.h`, `string.h`
+<br/>
 
-## 📚 What I Practiced
+<img src="assets/footer.svg" width="100%" alt="while(alive){ learn(); code(); repeat(); }"/>
 
-Loops, conditions, calculations, and string handling in C, all in one real-life project.
+### **Thanks for stopping by! ⭐ A star would make my day.**
 
----
-
-## 🙌 Support
-
-If you like this project, please give it a ⭐ on GitHub. It really motivates me to keep building!
-
-## 📜 License
-
-This project is open source under the [MIT License](LICENSE).
-
----
-
-<p align="center">Made with ❤️ by <b>Maruf Billah</b> · CSE, Daffodil International University</p>
+</div>
