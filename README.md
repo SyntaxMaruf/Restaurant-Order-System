@@ -65,7 +65,7 @@ Hi, I'm **Maruf Billah**, also known as **SyntaxMaruf**. I'm a Computer Science 
 
  ### 💻 Programming Languages
 <br>
-<img src="https://skillicons.dev/icons?i=c,c++,python,html,css,js&perline=5" alt="Languages" />
+<img src="https://skillicons.dev/icons?i=c,cpp,python,html,css,js&perline=5" alt="Languages" />
 
 ### 🛠️ Tools 
 <br>
