@@ -22,7 +22,7 @@ int main() {
     printf("2. Pizza       : 349.99 BDT\n");
     printf("3. Pasta       : 199.99 BDT\n");
     printf("4. Cold Drinks : 39.99 BDT\n");
-    printf("5. No more Today.\n");
+    printf("5. Nothing Else, Please show My Bill !!\n");
     printf("=========================================\n\n");
 
     while (1) {
@@ -54,70 +54,77 @@ int main() {
         printf("Added!\n");
     }
 
-    printf("\n-----------------------------------------\n");
-    printf("Press 1 to Confirm Order & Generate Bill: ");
-    scanf("%d", &confirm);
-
-    if (confirm == 1) {
-
-        subTotal = (burgerQty * burgerPrice) + (pizzaQty * pizzaPrice) + (pastaQty * pastaPrice) + (drinkQty * drinkPrice);
-
-        if (subTotal >= 100.0) {
-            printf("Enter Promo Code (or type 'none'): ");
-            scanf("%s", promoCode);
-
-            if (strcmp(promoCode, "maruf50") == 0) {
-                discount = 50.0;
-            } else {
-                discount = 0.0;
-            }
-        } else {
-            discount = 0.0; 
-        }
-
-        discountedTotal = subTotal - discount;
-        if (discountedTotal < 0) {
-            discountedTotal = 0;  
-        }
-
-        vat = discountedTotal * 0.05;
-        grandTotal = discountedTotal + vat;
-
+    if (burgerQty == 0 && pizzaQty == 0 && pastaQty == 0 && drinkQty == 0) {
         printf("\n=========================================\n");
-        printf("            FINAL CASH MEMO              \n");
-        printf("=========================================\n");
-        printf("Item         Qty   Unit Price   Total   \n");
-        printf("-----------------------------------------\n");
-
-        if (burgerQty > 0) {
-            printf("Burger       %-5d %-12.2f %.2f BDT\n", burgerQty, burgerPrice, burgerQty * burgerPrice);
-        }
-        if (pizzaQty > 0) {
-            printf("Pizza        %-5d %-12.2f %.2f BDT\n", pizzaQty, pizzaPrice, pizzaQty * pizzaPrice);
-        }
-        if (pastaQty > 0) {
-            printf("Pasta        %-5d %-12.2f %.2f BDT\n", pastaQty, pastaPrice, pastaQty * pastaPrice);
-        }
-        if (drinkQty > 0) {
-            printf("Cold Drinks  %-5d %-12.2f %.2f BDT\n", drinkQty, drinkPrice, drinkQty * drinkPrice);
-        }
-
-        printf("-----------------------------------------\n");
-        printf("Sub Total          : %.2f BDT\n", subTotal);
-        if (discount > 0) {
-            printf("Special Discount   : %.2f BDT\n", discount);
-            printf("-----------------------------------------\n");
-            printf("Discounted Subtotal: %.2f BDT\n", discountedTotal);
-        }
-        printf("VAT (5%%)           : %.2f BDT\n", vat);
-        printf("-----------------------------------------\n");
-        printf("Grand Total        : %.2f BDT\n", grandTotal);
-        printf("=========================================\n");
         printf("        Thank You For Coming!            \n");
         printf("=========================================\n");
+    } 
+    else {
+        printf("\n-----------------------------------------\n");
+        printf("Press 1 to Confirm Order & Generate Bill: ");
+        scanf("%d", &confirm);
 
-    } else {
-        printf("\nOrder Cancelled!\n");
+        if (confirm == 1) {
+
+            subTotal = (burgerQty * burgerPrice) + (pizzaQty * pizzaPrice) + (pastaQty * pastaPrice) + (drinkQty * drinkPrice);
+
+            if (subTotal >= 100.0) {
+                printf("Enter Promo Code (or type 'none'): ");
+                scanf("%s", promoCode);
+
+                if (strcmp(promoCode, "maruf50") == 0) {
+                    discount = 50.0;
+                } else {
+                    discount = 0.0;
+                }
+            } else {
+                discount = 0.0; 
+            }
+
+            discountedTotal = subTotal - discount;
+            if (discountedTotal < 0) {
+                discountedTotal = 0;  
+            }
+
+            vat = discountedTotal * 0.05;
+            grandTotal = discountedTotal + vat;
+
+            printf("\n=========================================\n");
+            printf("            FINAL CASH MEMO              \n");
+            printf("=========================================\n");
+            printf("Item         Qty   Unit Price   Total   \n");
+            printf("-----------------------------------------\n");
+
+            if (burgerQty > 0) {
+                printf("Burger       %-5d %-12.2f %.2f BDT\n", burgerQty, burgerPrice, burgerQty * burgerPrice);
+            }
+            if (pizzaQty > 0) {
+                printf("Pizza        %-5d %-12.2f %.2f BDT\n", pizzaQty, pizzaPrice, pizzaQty * pizzaPrice);
+            }
+            if (pastaQty > 0) {
+                printf("Pasta        %-5d %-12.2f %.2f BDT\n", pastaQty, pastaPrice, pastaQty * pastaPrice);
+            }
+            if (drinkQty > 0) {
+                printf("Cold Drinks  %-5d %-12.2f %.2f BDT\n", drinkQty, drinkPrice, drinkQty * drinkPrice);
+            }
+
+            printf("-----------------------------------------\n");
+            printf("Sub Total          : %.2f BDT\n", subTotal);
+            if (discount > 0) {
+                printf("Special Discount   : %.2f BDT\n", discount);
+                printf("-----------------------------------------\n");
+                printf("Discounted Subtotal: %.2f BDT\n", discountedTotal);
+            }
+            printf("VAT (5%%)           : %.2f BDT\n", vat);
+            printf("-----------------------------------------\n");
+            printf("Grand Total        : %.2f BDT\n", grandTotal);
+            printf("=========================================\n");
+            printf("        Thank You For Coming!            \n");
+            printf("=========================================\n");
+
+        } else {
+            printf("\nOrder Cancelled!\n");
+        }
     }
 
     return 0;
