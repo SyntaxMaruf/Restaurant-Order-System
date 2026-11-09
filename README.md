@@ -4,11 +4,11 @@
 
 ---
 
-## 👋 Hello, I'm Maruf Billah
+## 👋 Hello, I'm Maruf Billah.
 
 I'm a CSE student at **Daffodil International University**. I built this project in my **1st year, 3rd semester** while learning C programming.
 
-I created a **restaurant order and billing system** that works just like a real cashier counter: pick your food, choose how many you want, and get a neat cash memo with discount and VAT already calculated. I wanted to make something simple, useful, and fun to use, and I hope you enjoy it as much as I enjoyed building it.
+I created a **Restaurant Order and Billing System** that works just like a real cashier counter: pick your food, choose how many you want, and get a neat cash memo with discount and VAT already calculated. I wanted to make something simple, useful, and fun to use, and I hope you enjoy it as much as I enjoyed building it.
 
 ---
 
@@ -103,4 +103,4 @@ This project is open source under the [MIT License](LICENSE).
 
 ---
 
-<p align="center">Made with ❤️ by <b>Maruf Billah</b> · CSE, Daffodil International University</p>
+<p align="center">Made by <b>Maruf Billah</b> · <b>CSE, Daffodil International University</b></p>
