@@ -1,12 +1,12 @@
 # 🍔 Restaurant Order System in C
 
-> Order your favorite food, apply a promo code, and get a clean, ready-to-print bill, all from your terminal.
+> **Order your favorite food, apply a promo code, and get a clean, ready-to-print bill, all from your terminal.**
 
 ---
 
 ## 👋 Hello, I'm Maruf Billah.
 
-I'm a CSE student at **Daffodil International University**. I built this project in my **1st year, 3rd semester** while learning C programming.
+I'm a CSE student at **Daffodil International University**. I built this project in my **1st year, 2nd semester** while learning C programming.
 
 I created a **Restaurant Order and Billing System** that works just like a real cashier counter: pick your food, choose how many you want, and get a neat cash memo with discount and VAT already calculated. I wanted to make something simple, useful, and fun to use, and I hope you enjoy it as much as I enjoyed building it.
 
